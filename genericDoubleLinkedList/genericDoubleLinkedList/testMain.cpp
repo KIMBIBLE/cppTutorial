@@ -95,6 +95,7 @@ void mInput(LinkedList *lp)
 
 		// tail 노드 앞에 데이터 추가 
 		appendFromTail(lp, &inData, sizeof(DataType), personMemCpy);
+		//free(inData.name);
 	}
 	return;
 }
