@@ -37,12 +37,12 @@ int main()
 		case 3: mSearch(&list); break;              // 단일검색메뉴 실행
 		case 4: mDupSearch(&list); break;           // 다중검색메뉴 실행
 		case 5: mDelete(&list); break;              // 삭제메뉴 실행
-		case 6: sortList(&list, personNameCompare, personMemCpy, personClear); break; // 성명순 정렬메뉴 실행
-		case 7: sortList(&list, personAgeCompare, personMemCpy, personClear); break;  // 나이순 정렬메뉴 실행
+		case 6: sortList(&list, personNameCompare, personMemCpy, personFree); break; // 성명순 정렬메뉴 실행
+		case 7: sortList(&list, personAgeCompare, personMemCpy, personFree); break;  // 나이순 정렬메뉴 실행
 		}
 	}
 	//dataFileSave(&list); // 리스트내의 모든 데이터를 파일에 저장 
-	destroy(&list, personClear);
+	destroy(&list, personFree);
 
 	return 0;
 }
@@ -95,7 +95,7 @@ void mInput(LinkedList *lp)
 
 		// tail 노드 앞에 데이터 추가 
 		appendFromTail(lp, &inData, sizeof(DataType), personMemCpy);
-		//free(inData.name);
+		free(inData.name);
 	}
 	return;
 }
@@ -153,7 +153,7 @@ void mDelete(LinkedList * lp)
 		resp = searchUnique(lp, &dData, personNameCompare);
 		if (resp != NULL) // 찾았으면
 		{
-			deleteNode(lp, resp, personClear); //해당 노드를 지움
+			deleteNode(lp, resp, personFree); //해당 노드를 지움
 			printf("@ 삭제하였습니다.\n\n");
 		}
 		else //데이터가 없으면
@@ -226,6 +226,7 @@ void dataFileLoad(LinkedList *lp) // 데이터 파일내의 데이터를 리스트에 저장
 		strcpy(inData.phoneNumber, phoneNumber);
 		appendFromTail(lp, &inData, sizeof(DataType), personMemCpy);
 	}
+	free(name);
 	fclose(fp);
 }
 

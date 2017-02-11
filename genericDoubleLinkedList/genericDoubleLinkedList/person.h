@@ -18,7 +18,7 @@ typedef  Person DataType;     // 노드내의 데이터 영역의 형명 재지정
 //-------------------------------------
 
 void personMemCpy(void *p1, void *p2);
-void personClear(void *p);
+void personFree(void *p);
 void personPrint(void *p);
 int personNameCompare(void *p1, void *p2);
 int personAgeCompare(void *p1, void *p2);
