@@ -1,0 +1,6 @@
+﻿  thisPointer.cpp
+c:\users\b.b.kim\desktop\pm\cpp_tutorial\thispointer\thispointer\thispointer.cpp(19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+c:\users\b.b.kim\desktop\pm\cpp_tutorial\thispointer\thispointer\thispointer.cpp(42): warning C4129: '#': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+c:\users\b.b.kim\desktop\pm\cpp_tutorial\thispointer\thispointer\thispointer.cpp(43): warning C4129: 'e': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+  thisPointer.vcxproj -> C:\Users\B.B.KIM\Desktop\PM\cpp_tutorial\thisPointer\Debug\thisPointer.exe
+  thisPointer.vcxproj -> C:\Users\B.B.KIM\Desktop\PM\cpp_tutorial\thisPointer\Debug\thisPointer.pdb (Full PDB)
