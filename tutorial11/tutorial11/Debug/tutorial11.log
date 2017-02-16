@@ -1,0 +1,5 @@
+﻿  hw11.cpp
+c:\users\b.b.kim\desktop\pm\cpp_tutorial\tutorial11\tutorial11\hw11.cpp(61): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\b.b.kim\desktop\pm\cpp_tutorial\tutorial11\tutorial11\hw11.cpp(62): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  tutorial11.vcxproj -> C:\Users\B.B.KIM\Desktop\PM\cpp_tutorial\tutorial11\Debug\tutorial11.exe
+  tutorial11.vcxproj -> C:\Users\B.B.KIM\Desktop\PM\cpp_tutorial\tutorial11\Debug\tutorial11.pdb (Full PDB)
