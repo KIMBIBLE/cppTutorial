@@ -1,0 +1,5 @@
+﻿  abstract_class.cpp
+c:\users\b.b.kim\desktop\pm\cpp_tutorial\virtual_teacher_virtual_desturctor\virtual_teacher_virtual_desturctor\abstract_class.cpp(10): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+c:\users\b.b.kim\desktop\pm\cpp_tutorial\virtual_teacher_virtual_desturctor\virtual_teacher_virtual_desturctor\abstract_class.cpp(46): error C2661: 'kTeacher::kTeacher': 오버로드된 함수에서 2개의 매개 변수를 사용하지 않습니다.
+c:\users\b.b.kim\desktop\pm\cpp_tutorial\virtual_teacher_virtual_desturctor\virtual_teacher_virtual_desturctor\abstract_class.cpp(50): error C2661: 'kTeacher::kTeacher': 오버로드된 함수에서 2개의 매개 변수를 사용하지 않습니다.
